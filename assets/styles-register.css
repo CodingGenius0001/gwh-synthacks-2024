@@ -1,38 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
-    --bg-color: #1a1a1a;
-}
-
-* {
-    font-weight: 500;
-    box-sizing: border-box;
+    --bg-color: #111; /* Adjust this if you have a different background color */
+    --primary-color: #5cb85c;
+    --hover-color: #4cae4c;
+    --text-color: #fff;
 }
 
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #1a1a1a;
-    font-family: "Raleway", sans-serif;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    transition-duration: 0.3s;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .container {
-    width: 95%;
-    max-width: 1400px;
-    margin: 0px auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
-a:hover{
-    color: #abdded;
-}
-
-/* Header */
-.navbar{
+/* Navbar Styles */
+.navbar {
     position: sticky;
     top: 0px;
     background-color: var(--bg-color);
@@ -60,7 +48,7 @@ a:hover{
 }
 
 .logo span {
-    font-size: 6;
+    font-size: 24px;
     font-weight: 700;
 }
 
@@ -81,6 +69,17 @@ a:hover{
     margin-left: 0;
 }
 
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+}
+
 .dropdown-cont {
     position: absolute;
     z-index: 500;
@@ -95,7 +94,7 @@ a:hover{
 
 .dropdown:hover>.dropdown-cont {
     display: block;
-}  
+}
 
 .dropdown-cont ul {
     display: flex;
@@ -117,32 +116,30 @@ a:hover{
 
 .dropdown-cont a {
     color: #1a1a1a;
-
 }
 
-/* Hero Section */
-.hero-section .container {
-    position: relative;
+/* Registration Section Styles */
+.body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 580px;
-    height: 80vh;
-    max-height: 600px;
-    color: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-top: 24px;
-    margin-bottom: 24px;
-    border: 2px solid #3b3b3b;
-    /* background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(10px);
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    padding: 2em 0;
 }
 
+.body h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
 
+.body h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* Purple Button Styles */
 .btn-purple {
     background-color: #6a0dad; /* Purple background color */
     color: white;
@@ -157,4 +154,35 @@ a:hover{
 .btn-purple:hover {
     background-color: #5a00a3; /* Darker purple for hover */
     transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    color: #fff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-top: 2px solid #3b3b3b;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer a {
+    color: #abdded;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #50acca;
+}
+
+footer h4, footer p {
+    margin: 0;
+}
+
+footer h4 {
+    font-weight: 700;
+    margin: 32px 0 8px 0;
 }
