@@ -19,8 +19,41 @@ body {
     padding: 0 1em;
 }
 
-/* Navbar Styles */
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #1a1a1a;
+}
+
+•⁠  ⁠{
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+a:hover{
+    color: #abdded;
+}
+
+/* Header */
+.navbar{
     position: sticky;
     top: 0px;
     background-color: var(--bg-color);
@@ -48,7 +81,7 @@ body {
 }
 
 .logo span {
-    font-size: 24px;
+    font-size: 6;
     font-weight: 700;
 }
 
@@ -69,17 +102,6 @@ body {
     margin-left: 0;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.navbar a:hover {
-    color: var(--primary-color);
-}
-
 .dropdown-cont {
     position: absolute;
     z-index: 500;
@@ -94,7 +116,7 @@ body {
 
 .dropdown:hover>.dropdown-cont {
     display: block;
-}
+}  
 
 .dropdown-cont ul {
     display: flex;
@@ -116,7 +138,31 @@ body {
 
 .dropdown-cont a {
     color: #1a1a1a;
+
 }
+
+/* Hero Section */
+.hero-section .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 580px;
+    height: 80vh;
+    max-height: 600px;
+    color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 2px solid #3b3b3b;
+    /* background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+
 
 /* Registration Section Styles */
 .body {
