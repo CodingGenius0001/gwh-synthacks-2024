@@ -104,42 +104,4 @@ a:hover{
     margin-left: 0;
 }
 
-.dropdown-cont {
-    position: absolute;
-    z-index: 500;
-    top: 43px;
-    right: 0px;
-    display: none;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: white;
-    width: 170px;
-}
-
-.dropdown:hover>.dropdown-cont {
-    display: block;
-}  
-
-.dropdown-cont ul {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.dropdown-cont ul li {
-    margin-left: 0px;
-    white-space: nowrap;
-    margin-bottom: 0px;
-    padding: 8px 16px;
-    width: 100%;
-}
-
-.dropdown-cont ul li:hover {
-    background-color: #dfdfdf;
-}
-
-.dropdown-cont a {
-    color: #1a1a1a;
-
-}
 
