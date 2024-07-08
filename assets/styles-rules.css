@@ -143,39 +143,3 @@ a:hover{
 
 }
 
-
-
-
-
-
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    color: #fff;
-    padding-top: 64px;
-    padding-bottom: 64px;
-    border-top: 2px solid #3b3b3b;
-}
-
-footer img {
-    width: 150px;
-}
-
-footer a {
-    color: #abdded;
-    transition-duration: 0.2s;
-}
-
-footer a:hover {
-    color: #50acca;
-}
-
-footer h4, footer p {
-    margin: 0;
-}
-
-footer h4 {
-    font-weight: 700;
-    margin: 32px 0 8px 0;
-}
