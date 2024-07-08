@@ -11,22 +11,34 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    text-align: center; /* New: Center align all text content */
 }
 .container {
-    width: 80%; /* Modified: Changed from 95% to 80% */
-    max-width: 800px; /* Modified: Changed from 1400px to 800px */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* New: Added padding */
+    padding: 0 1em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --bg-color: #1a1a1a;
 }
 * {
     font-weight: 500;
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: "Raleway", sans-serif;
+}
 a {
     color: #fff;
     text-decoration: none;
     transition-duration: 0.3s;
+}
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0px auto;
 }
 a:hover{
     color: #abdded;
@@ -43,8 +55,7 @@ a:hover{
 .navbar .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column; /* New: Stack items vertically for centered layout */
+    justify-content: space-between; 
 }
 .logo {
     display: flex;
@@ -64,7 +75,7 @@ a:hover{
     display: flex;
     list-style-type: none;
     padding: 0px;
-    margin: 20px 0 0 0; /* Modified: Added top margin */
+    margin: 0;
 }
 .navbar li {
     position: relative;
@@ -170,24 +181,26 @@ footer h4 {
     margin: 32px 0 8px 0;
 }
 
-/* New styles for better formatting */
-h1 {
+/* New styles for centering and formatting main content */
+.main-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content h1 {
     font-size: 2.5em;
     margin-bottom: 30px;
 }
-h2 {
+
+.main-content h2 {
     font-size: 1.8em;
     margin-top: 40px;
     margin-bottom: 20px;
 }
-p {
+
+.main-content p {
     margin-bottom: 20px;
     line-height: 1.6;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
 }
