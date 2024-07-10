@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/styles.css">
 
     <!-- Simply Countdown CSS -->
-    <link href="./assets/simplyCountdown.theme.default.css">
+     <link href="./assets/simplyCountdown.theme.default.css">
 
 </head>
 <body>
@@ -58,7 +58,6 @@
             </nav>
         </div>
     </header>
-
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
@@ -85,13 +84,6 @@
                     <span>Secs</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Hackathon Info Section -->
-    <section class="info-section">
-        <div class="container">
-            <p>Synthacks is our school's annual hackathon, hosting participants in two categories: Junior (6th-8th grade) and Senior (9th-12th grade). Join us for an exciting event filled with creativity, innovation, and collaboration!</p>
         </div>
     </section>
 
@@ -215,13 +207,13 @@
     <!-- Fontawesome (CDN libraries - Content Delivery Network) -->
     <script src="https://kit.fontawesome.com/87ac74576e.js" crossorigin="anonymous"></script>
 
-    <!-- SimplyCountdown JS -->
-    <!-- <script src="./assets/simplyCountdown.min.js"></script> -->
+        <!-- SimplyCoundown JS -->
+        <!-- <script src="./assets/simplyCountdown.min.js"></script> -->
 
     <script src="./assets/countdown.min.js"></script>
 
     <script>
-        // Countdown Asset
+        //Countdown Asset
         const myInterval = setInterval(showTimer, 1000);
         const countdownEl = document.querySelector(".countdown")
         const dayEl = document.querySelector(".day h3");
@@ -244,12 +236,13 @@
             secEl.innerHTML = c.seconds;
 
             if (endDate <= new Date()) {
-                countdownEl.innerHTML = "<h3>Event occurring now!</h3>";
+                countdownEl.innerHTML = "<h3>Event occuring now!</h3>";
                 clearInterval(myInterval);
             }
         }
         
-        // SwiperJS Implementation - Synthacks '23 Album  !important
+
+        //SwiperJS Implementation - Synthacks '23 Album  !important
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             loop: true,
