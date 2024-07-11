@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+New:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier New:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --bg-color: #111;
-    --primary-color: #B200ED;
+    --bg-color: #111; /* Adjust this if you have a different background color */
+    --primary-color: #5cb85c;
     --hover-color: #4cae4c;
     --text-color: #fff;
 }
@@ -21,9 +21,43 @@ body {
     padding: 0 1em;
 }
 
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Courier New:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-color: #1a1a1a;
+}
+
+•⁠  ⁠{
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: "Courier New", sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
+a:hover{
+    color: #abdded;
+}
+
+/* Header */
+.navbar{
     position: sticky;
-    top: 0;
+    top: 0px;
     background-color: var(--bg-color);
     padding-top: 16px;
     padding-bottom: 16px;
@@ -33,7 +67,7 @@ body {
 .navbar .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 .logo {
@@ -49,21 +83,21 @@ body {
 }
 
 .logo span {
-    font-size: 24px;
+    font-size: 6;
     font-weight: 700;
 }
 
 .navbar ul {
     display: flex;
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 
 .navbar li {
     position: relative;
     margin-left: 24px;
-    padding: 12px 0;
+    padding: 12px 0px;
 }
 
 .navbar li:first-child {
@@ -74,7 +108,7 @@ body {
     position: absolute;
     z-index: 500;
     top: 43px;
-    right: 0;
+    right: 0px;
     display: none;
     border-radius: 8px;
     overflow: hidden;
@@ -82,9 +116,9 @@ body {
     width: 170px;
 }
 
-.dropdown:hover > .dropdown-cont {
+.dropdown:hover>.dropdown-cont {
     display: block;
-}
+}  
 
 .dropdown-cont ul {
     display: flex;
@@ -93,9 +127,9 @@ body {
 }
 
 .dropdown-cont ul li {
-    margin-left: 0;
+    margin-left: 0px;
     white-space: nowrap;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     padding: 8px 16px;
     width: 100%;
 }
@@ -106,66 +140,97 @@ body {
 
 .dropdown-cont a {
     color: #1a1a1a;
+
 }
 
-/* Registration Section */
-.registration-content {
-    text-align: center;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: var(--bg-color);
-    border: 2px solid #3b3b3b;
-    border-radius: 12px;
-}
-
-.registration-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: var(--primary-color);
-}
-
-.registration-content p {
-    font-size: 1.2em;
-    color: var(--text-color);
-    margin-bottom: 30px;
-}
-
-.registration-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-.registration-table th, .registration-table td {
-    border: 2px solid #3b3b3b;
-    padding: 10px;
-    color: var(--text-color);
-    text-align: center;
-}
-
-.registration-table th {
-    background-color: var(--primary-color);
-    font-size: 1.2em;
-}
-
-.registration-table td {
-    background-color: #1f1f1f;
-    font-size: 1.2em;
-}
-
-.register-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2em;
+/* Hero Section */
+.hero-section .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 580px;
+    height: 80vh;
+    max-height: 600px;
     color: #fff;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 2px solid #3b3b3b;
+    /* background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
 }
 
-.register-button:hover {
-    background-color: #9b00d9;
+
+/* Registration Section Styles */
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    padding: 2em 0;
+}
+
+.body h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.body h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+/* Purple Button Styles */
+.btn-purple {
+    background-color: #6a0dad; /* Purple background color */
+    color: white;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: #5a00a3; /* Darker purple for hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    color: #fff;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    border-top: 2px solid #3b3b3b;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer a {
+    color: #abdded;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #50acca;
+}
+
+footer h4, footer p {
+    margin: 0;
+}
+
+footer h4 {
+    font-weight: 700;
+    margin: 32px 0 8px 0;
 }
