@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+New:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --bg-color: #111;
-    --primary-color: #5cb85c;
+    --bg-color: #111; /* Adjust this if you have a different background color */
+    --primary-color: #800080; /* Purple color */
     --hover-color: #4cae4c;
     --text-color: #fff;
 }
