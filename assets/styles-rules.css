@@ -220,20 +220,19 @@ footer h4 {
     background-color: var(--bg-color);
     border: 2px solid #3b3b3b;
     border-radius: 12px;
-}
-
-.themes-content h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure themes are evenly spaced */
 }
 
 .theme-box {
-    margin-bottom: 30px; /* Increased margin-bottom for spacing between boxes */
-    padding: 40px; /* Increased padding for larger content area */
+    width: calc(50% - 20px); /* Calculate 50% width minus spacing */
+    margin-bottom: 20px; /* Adjusted margin-bottom for spacing between boxes */
+    padding: 20px; /* Adjusted padding for content area */
     border: 2px solid #3b3b3b;
     border-radius: 8px;
     background-color: #1f1f1f;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 .theme-box h3 {
@@ -246,3 +245,7 @@ footer h4 {
     font-size: 1.2em;
     color: var(--text-color);
 }
+
+@media (max-width: 840px) {
+    .theme-box {
+        width: calc(100% - 20px); /* Full width on smaller screens */
