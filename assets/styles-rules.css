@@ -132,6 +132,7 @@ a:hover {
     margin-top: 24px;
     margin-bottom: 24px;
     border: 2px solid #3b3b3b;
+    /* background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(10px);
