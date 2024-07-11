@@ -163,6 +163,7 @@ a:hover {
     z-index: 5;
 }
 
+
 /* Registration Section Styles */
 .body {
     display: flex;
@@ -229,7 +230,6 @@ footer h4 {
 .rules-content p {
     margin-bottom: 20px;
     line-height: 1.6;
-    text-align: center; /* Center the paragraph text */
 }
 
 /* Ensure the content doesn't touch the edges on smaller screens */
