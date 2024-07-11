@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="./styles-register.css">
+    <title>Registrations</title>
+
+    <link rel="stylesheet" href="./assets/styles-register.css">
+    <style>
+        table {
+            width: 30%;
+            margin: auto; /* Center the table */
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+        .btn-purple {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #6a1b9a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-purple:hover {
+            background-color: #4a0072;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="navbar">
@@ -37,34 +68,28 @@
         </div>
     </header>
 
-    <!-- Registration Section -->
-    <div class="registration-content">
-        <h2>Register for SyntHacks 2024</h2>
-        <p>Please select your category and register using the link provided.</p>
-        
-        <table class="registration-table">
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Grades</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Junior</td>
-                    <td>6th to 8th Grade</td>
-                </tr>
-                <tr>
-                    <td>Senior</td>
-                    <td>9th to 12th Grade</td>
-                </tr>
-            </tbody>
+    <!-- Main Content -->
+    <section class="body">
+        <h1>Registrations</h1>
+        <h2>Eligibility Criteria and Age Categories</h2> 
+
+        <table>
+            <tr>
+                <td>Junior Category</td>
+                <td>6th - 8th</td>
+            </tr>
+            <tr>
+                <td>Senior Category</td>
+                <td>9th - 12th</td>
+            </tr>
         </table>
-        
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScHq3qfrm86HIcKmuWbU_1-YxDDS8D9mvYYKJmU_ldiM7Rk3g/viewform" class="register-button">Register Now</a>
-    </div>
+
+        <h3>Click the link below to start the registration process:</h3>
+        <button class="btn-purple" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScHq3qfrm86HIcKmuWbU_1-YxDDS8D9mvYYKJmU_ldiM7Rk3g/viewform'">Register Now!</button>
+    </section>
 
     <!-- Fontawesome (CDN libraries - Content Delivery Network) -->
     <script src="https://kit.fontawesome.com/87ac74576e.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
