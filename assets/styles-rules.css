@@ -222,9 +222,7 @@ footer h4 {
     border-radius: 12px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-    grid-template-rows: repeat(2, auto) auto; /* Auto height for the first two rows and one full width row */
     gap: 20px;
-    justify-items: center;
 }
 
 .theme-box {
@@ -233,19 +231,6 @@ footer h4 {
     border-radius: 8px;
     background-color: #1f1f1f;
     color: var(--text-color);
-}
-
-.theme-box:nth-child(1), 
-.theme-box:nth-child(2),
-.theme-box:nth-child(3),
-.theme-box:nth-child(4) {
-    width: calc(100% - 20px); /* Full width for the first two rows */
-}
-
-.theme-box:nth-child(5),
-.theme-box:nth-child(6) {
-    width: 100%; /* Full width for the last box */
-    grid-column: span 2;
 }
 
 .theme-box h3 {
@@ -261,15 +246,9 @@ footer h4 {
 @media (max-width: 840px) {
     .themes-content {
         grid-template-columns: 1fr; /* Single column layout on smaller screens */
-        grid-template-rows: repeat(6, auto); /* Auto height for all rows */
     }
 
     .theme-box {
         width: 100%;
-    }
-
-    .theme-box:nth-child(5),
-    .theme-box:nth-child(6) {
-        grid-column: span 1;
     }
 }
