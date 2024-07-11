@@ -220,39 +220,56 @@ footer h4 {
     background-color: var(--bg-color);
     border: 2px solid #3b3b3b;
     border-radius: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Ensure themes are evenly spaced */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-template-rows: repeat(2, auto) auto; /* Auto height for the first two rows and one full width row */
+    gap: 20px;
+    justify-items: center;
 }
 
 .theme-box {
-    width: calc(50% - 20px); /* Calculate 50% width minus spacing */
-    margin-bottom: 20px; /* Adjusted margin-bottom for spacing between boxes */
-    padding: 20px; /* Adjusted padding for content area */
+    padding: 20px;
     border: 2px solid #3b3b3b;
     border-radius: 8px;
     background-color: #1f1f1f;
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    color: var(--text-color);
 }
 
-.theme-box:nth-child(odd) {
-    margin-left: auto; /* Push odd-numbered boxes to the right */
-    width: 100%; /* Full width for odd-numbered boxes */
+.theme-box:nth-child(1), 
+.theme-box:nth-child(2),
+.theme-box:nth-child(3),
+.theme-box:nth-child(4) {
+    width: calc(100% - 20px); /* Full width for the first two rows */
+}
+
+.theme-box:nth-child(5),
+.theme-box:nth-child(6) {
+    width: 100%; /* Full width for the last box */
+    grid-column: span 2;
 }
 
 .theme-box h3 {
     font-size: 1.8em;
-    margin-bottom: 10px; /* Adjusted margin-bottom for title */
+    margin-bottom: 10px;
     color: var(--primary-color);
 }
 
 .theme-box p {
     font-size: 1.2em;
-    color: var(--text-color);
 }
 
 @media (max-width: 840px) {
+    .themes-content {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        grid-template-rows: repeat(6, auto); /* Auto height for all rows */
+    }
+
     .theme-box {
-        width: calc(100% - 20px); /* Full width on smaller screens */
+        width: 100%;
+    }
+
+    .theme-box:nth-child(5),
+    .theme-box:nth-child(6) {
+        grid-column: span 1;
     }
 }
