@@ -21,13 +21,11 @@ body {
     padding: 0 1em;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
     --bg-color: #1a1a1a;
 }
 
-•⁠  ⁠{
+* {
     font-weight: 500;
     box-sizing: border-box;
 }
@@ -36,6 +34,7 @@ body {
     margin: 0;
     background-color: #1a1a1a;
     font-family: "Raleway", sans-serif;
+    padding: 10px 0; /* Add this line to set top and bottom padding to 10px */
 }
 
 a {
@@ -50,12 +49,12 @@ a {
     margin: 0px auto;
 }
 
-a:hover{
+a:hover {
     color: #abdded;
 }
 
 /* Header */
-.navbar{
+.navbar {
     position: sticky;
     top: 0px;
     background-color: var(--bg-color);
@@ -67,7 +66,7 @@ a:hover{
 .navbar .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .logo {
@@ -116,9 +115,9 @@ a:hover{
     width: 170px;
 }
 
-.dropdown:hover>.dropdown-cont {
+.dropdown:hover > .dropdown-cont {
     display: block;
-}  
+}
 
 .dropdown-cont ul {
     display: flex;
@@ -140,7 +139,6 @@ a:hover{
 
 .dropdown-cont a {
     color: #1a1a1a;
-
 }
 
 /* Hero Section */
@@ -164,7 +162,6 @@ a:hover{
     background-position: center;
     backdrop-filter: blur(10px);
 }
-
 
 /* Registration Section Styles */
 .body {
@@ -226,7 +223,8 @@ footer a:hover {
     color: #50acca;
 }
 
-footer h4, footer p {
+footer h4,
+footer p {
     margin: 0;
 }
 
