@@ -223,8 +223,8 @@ footer h4 {
 }
 
 .themes-title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 40px; /* Added more margin below the title */
     color: var(--text-color);
 }
 
@@ -232,6 +232,7 @@ footer h4 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns layout */
     gap: 20px;
+    justify-items: center;
 }
 
 .theme-box {
@@ -240,6 +241,7 @@ footer h4 {
     border-radius: 8px;
     background-color: #1f1f1f;
     color: var(--text-color);
+    width: 100%; /* Ensures the boxes take up the full available width */
 }
 
 .theme-box h3 {
