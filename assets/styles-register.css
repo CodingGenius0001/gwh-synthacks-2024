@@ -150,9 +150,8 @@ a:hover {
 .body {
     display: flex;
     flex-direction: column;
-/*     justify-content: center;
-    align-items: center; */
-    height: 100vh; /* Full height of the viewport */
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 2px 0;
 }
@@ -167,15 +166,23 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.font-md{
+    font-size: 16px !important;
+}
+
+h1.font-md{
+    font-size: 26px !important;
+}
+
 /* Purple Button Styles */
 .btn-purple {
-    background-color: #6a0dad; /* Purple background color */
+    background-color: #6a0dad; 
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 15px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
