@@ -1,4 +1,4 @@
-Synthacks 2024 Website
+**Synthacks 2024 Website**
 
 Synthacks is the annual intraschool hackathon hosted by Greenwood High, serving as a platform for students to showcase their coding skills and innovative thinking. 
 Each year, participants are challenged with unique themes that inspire creativity and problem-solving. 
