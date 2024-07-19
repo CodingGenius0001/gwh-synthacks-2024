@@ -8,7 +8,7 @@
 body {
     font-family: "Raleway", sans-serif;
     margin: 0;
-    padding: 10;
+    padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -155,13 +155,18 @@ a:hover {
 
 .hero-section p {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 20px; /* Reduced from 22px */
     text-align: center;
     margin-top: 32px;
     margin-bottom: 0;
     text-shadow: 0px 0px 8px rgba(0,0,0,0.8);
     position: relative;
     z-index: 5;
+    max-width: 80%; /* Added to constrain width */
+    margin-left: auto; /* Center the paragraph */
+    margin-right: auto; /* Center the paragraph */
+    line-height: 1.5; /* Added for better readability */
+    padding: 0 20px; /* Added padding on the sides */
 }
 
 
