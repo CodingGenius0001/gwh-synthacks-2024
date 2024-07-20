@@ -8,48 +8,56 @@
 
     <link rel="stylesheet" href="./assets/styles-register.css">
     <style>
-        table {
-            width: 30%;
-            margin: 0 auto; /* Center the table */
-            border-collapse: collapse;
-            margin-top: -10px; /* Move the table up by 10px */
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 15px;
-            text-align: center;
-        }
-        .btn-purple {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #6a1b9a;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .btn-purple:hover {
-            background-color: #4a0072;
-        }
+        /* Existing styles */
+
+        /* Rules Section Styles */
         .rules-section {
             margin: 20px auto;
             padding: 20px;
-            background-color: #1a1a1a;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            background-color: #1a1a1a; /* Grey color for rules section */
+            color: var(--text-color);
+            border: 1px solid #3b3b3b;
+            border-radius: 8px;
             width: 80%;
             max-width: 800px;
         }
+
         .rules-section h3 {
+            font-size: 22px;
             margin-top: 0;
+            margin-bottom: 15px;
         }
-        .rules-section ul {
-            list-style-type: disc;
-            padding-left: 20px;
+
+        .rule {
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .rule-title {
+            font-size: 18px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #6a1b9a; /* Purple background for title */
+            border-radius: 5px;
+            color: var(--text-color);
+        }
+
+        .rule-title:hover {
+            background-color: #5a00a3; /* Darker purple on hover */
+        }
+
+        .rule-description {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #1a1a1a;
+            border: 1px solid #3b3b3b;
+            border-radius: 5px;
+            color: var(--text-color);
+        }
+
+        .rule:hover .rule-description {
+            display: block;
         }
     </style>
 </head>
@@ -103,21 +111,55 @@
 
         <p class="font-md info">Registration Form for Synthacks 2024. Registrations close on 7th August, 2024 at 9:30 p.m., so please ensure you register as soon as possible!</p>
 
-        <div class="rules-section">
-            <h3>Rules for Synthacks 2024</h3>
-            <ul>
-                <li>Participants can create their project using any technology they want including but not limited to: Machine learning, AI, App development, IoT, Robotics etc.</li>
-                <li>If hardware components are being used, the participants must procure the required equipment themselves.</li>
-                <li>Usage of any paid API is not permitted.</li>
-                <li>Participants will not be allowed to use any prewritten code.</li>
-                <li>Plagiarism is not allowed in any case, it will cause the entire team to be disqualified.</li>
-                <li>Participants WILL NOT be allowed to work on their projects before the competition.</li>
-                <h2>If a team is found breaking any rule, they will have until the next auditing round to rectify their code. During the auditing round, the auditing team will inspect the team’s code to ensure the rules are being met. If the rules are still not met, the team will not be eligible for judging, and will not receive any prizes.</h2>
-            </ul>
-        </div>
-
         <h3 class="font-md">Click the link below to start the registration process:</h3>
         <button class="btn-purple" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScHq3qfrm86HIcKmuWbU_1-YxDDS8D9mvYYKJmU_ldiM7Rk3g/viewform'">Register Now!</button>
+
+        <!-- Rules Section -->
+        <div class="rules-section">
+            <h3>Rules</h3>
+            <div class="rule">
+                <div class="rule-title">Technology Usage</div>
+                <div class="rule-description">
+                    The participants can create their project using any technology they want including but not limited to: Machine learning, AI, App development, IoT, Robotics etc.
+                </div>
+            </div>
+            <div class="rule">
+                <div class="rule-title">Hardware Components</div>
+                <div class="rule-description">
+                    If hardware components are being used, the participants must procure the required equipment themselves.
+                </div>
+            </div>
+            <div class="rule">
+                <div class="rule-title">Paid APIs</div>
+                <div class="rule-description">
+                    Usage of any paid API is not permitted.
+                </div>
+            </div>
+            <div class="rule">
+                <div class="rule-title">Prewritten Code</div>
+                <div class="rule-description">
+                    Participants will not be allowed to use any prewritten code.
+                </div>
+            </div>
+            <div class="rule">
+                <div class="rule-title">Plagiarism</div>
+                <div class="rule-description">
+                    Plagiarism is not allowed in any case; it will cause the entire team to be disqualified.
+                </div>
+            </div>
+            <div class="rule">
+                <div class="rule-title">Project Timing</div>
+                <div class="rule-description">
+                    Participants WILL NOT be allowed to work on their projects before the competition.
+                </div>
+            </div>
+            <div class="rule">
+                <div class="rule-title">Rule Violations</div>
+                <div class="rule-description">
+                    If a team is found breaking any rule, they will have until the next auditing round to rectify their code. During the auditing round, the auditing team will inspect the team’s code to ensure the rules are being met. If the rules are still not met, the team will not be eligible for judging and will not receive any prizes.
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer-->
