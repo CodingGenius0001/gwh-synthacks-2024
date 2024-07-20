@@ -5,6 +5,8 @@
     --hover-color: #4cae4c;
     --text-color: #fff;
     --bg-color: #1a1a1a;
+    --border-color: #3b3b3b;
+    --highlight-color: #6a1b9a;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 }
 
 a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     transition-duration: 0.3s;
 }
@@ -65,7 +67,7 @@ a:hover {
 }
 
 .logo span {
-    font-size: 6;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -94,7 +96,7 @@ a:hover {
     display: none;
     border-radius: 8px;
     overflow: hidden;
-    background-color: white;
+    background-color: #fff;
     width: 170px;
 }
 
@@ -121,7 +123,7 @@ a:hover {
 }
 
 .dropdown-cont a {
-    color: #1a1a1a;
+    color: var(--bg-color);
 }
 
 /* Hero Section */
@@ -134,13 +136,12 @@ a:hover {
     min-height: 580px;
     height: 80vh;
     max-height: 600px;
-    color: #fff;
+    color: var(--text-color);
     border-radius: 12px;
     overflow: hidden;
     margin-top: 24px;
     margin-bottom: 24px;
-    border: 2px solid #3b3b3b;
-    /* background-image: url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    border: 2px solid var(--border-color);
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(10px);
@@ -157,27 +158,27 @@ a:hover {
 }
 
 .body h1 {
-    font-size: 15px;
+    font-size: 26px;
     margin-bottom: 10px;
 }
 
-.body h3 {
-    font-size: 12px;
+.body h2, .body h3 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.font-md{
+.font-md {
     font-size: 16px !important;
 }
 
-h1.font-md{
+h1.font-md {
     font-size: 26px !important;
 }
 
 /* Purple Button Styles */
 .btn-purple {
-    background-color: #6a0dad; 
-    color: white;
+    background-color: var(--highlight-color); 
+    color: var(--text-color);
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -191,13 +192,39 @@ h1.font-md{
     transform: scale(1.05); /* Slightly larger on hover */
 }
 
+/* Rules Section Styles */
+.rules-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.rules-section h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.rules-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.rules-section li {
+    margin-bottom: 10px;
+}
+
 /* Footer Styles */
 footer {
     text-align: center;
-    color: #fff;
+    color: var(--text-color);
     padding-top: 64px;
     padding-bottom: 64px;
-    border-top: 2px solid #3b3b3b;
+    border-top: 2px solid var(--border-color);
 }
 
 footer img {
