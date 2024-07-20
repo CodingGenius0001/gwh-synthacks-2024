@@ -20,6 +20,7 @@
             border-radius: 8px;
             width: 80%;
             max-width: 800px;
+            transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
         }
 
         .rules-section h3 {
@@ -40,10 +41,12 @@
             background-color: #6a1b9a; /* Purple background for title */
             border-radius: 5px;
             color: var(--text-color);
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
         }
 
         .rule-title:hover {
             background-color: #5a00a3; /* Darker purple on hover */
+            transform: scale(1.02); /* Slightly enlarge on hover */
         }
 
         .rule-description {
@@ -54,10 +57,16 @@
             border: 1px solid #3b3b3b;
             border-radius: 5px;
             color: var(--text-color);
+            transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Smooth transitions */
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
         }
 
         .rule:hover .rule-description {
             display: block;
+            max-height: 200px; /* Adjust as needed */
+            opacity: 1;
         }
     </style>
 </head>
@@ -169,12 +178,4 @@
             <h4>Location</h4>
             <a href="https://maps.app.goo.gl/W2hDSP2TAAW525nR7">Greenwood High School Sarjapur</a>
             <h4>Contact</h4>
-            <p>Event Head - <a href="mailto:shlok023079@greenwoodhigh.edu.in">shlok023079@greenwoodhigh.edu.in</a></p>
-        </div>
-    </footer>
-
-    <!-- Fontawesome (CDN libraries - Content Delivery Network) -->
-    <script src="https://kit.fontawesome.com/87ac74576e.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+            <p>Event Head
