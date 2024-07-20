@@ -7,6 +7,7 @@
     --bg-color: #1a1a1a;
     --border-color: #3b3b3b;
     --highlight-color: #6a1b9a;
+    --rules-bg-color: #2c2c2c; /* Grey color for rules section */
 }
 
 body {
@@ -196,7 +197,8 @@ h1.font-md {
 .rules-section {
     margin: 20px auto;
     padding: 20px;
-    background-color: #000000;
+    background-color: var(--rules-bg-color); /* Grey color for rules section */
+    color: var(--text-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     width: 80%;
