@@ -196,7 +196,7 @@ h1.font-md {
 .rules-section {
     margin: 20px auto;
     padding: 20px;
-    background-color: #1a1a1a;
+    background-color: #000000;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     width: 80%;
