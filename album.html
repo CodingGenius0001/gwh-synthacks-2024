@@ -64,7 +64,7 @@
         <div class="container">
             <h1 class="main-heading">Synthacks '23 Album</h1>
             <!-- Slider main container -->
-            <div class="swiper">
+            <div class="swiper myswiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url('./assets/slide1.jpg')">
                     </div>
@@ -124,6 +124,33 @@
     
     <!-- SwiperJS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        //SwiperJS Implementation - Synthacks '23 Album  !important
+        const swiper = new Swiper('.myswiper', {
+            // Optional parameters
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            keyboard: true,
+            slidesPerView: 3,
+            spaceBetween: 25,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
     
 </body>
 </html>
