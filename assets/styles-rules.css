@@ -279,5 +279,5 @@ footer h4 {
 
 .theme-box p {
     font-size: 1.2em;
-    color: var(--text-color); /* Set text color to white */
+    color: #fff; /* Set text color to white */
 }
