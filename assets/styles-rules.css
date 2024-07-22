@@ -268,15 +268,16 @@ footer h4 {
     border: 2px solid #3b3b3b;
     border-radius: 8px;
     background-color: #1f1f1f;
+    color: var(--text-color); /* Set text color to white */
 }
 
 .theme-box h3 {
     font-size: 1.8em;
     margin-bottom: 15px; /* Adjusted margin-bottom for title */
-    color: var(--primary-color);
+    color: var(--primary-color); /* Title color */
 }
 
 .theme-box p {
     font-size: 1.2em;
-    color: var(--text-color);
+    color: var(--text-color); /* Set text color to white */
 }
