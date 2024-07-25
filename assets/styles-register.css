@@ -178,6 +178,7 @@ h1.font-md {
 
 /* Purple Button Styles */
 .btn-purple {
+    position: center
     background-color: var(--highlight-color); 
     color: var(--text-color);
     padding: 10px 15px;
