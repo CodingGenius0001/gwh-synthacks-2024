@@ -203,7 +203,7 @@ h1.font-md {
     border-radius: 8px;
     width: 80%;
     max-width: 800px;
-    transition: background-color 0.3s, border-color 1s; /* Smooth transitions */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
 }
 
 .rules-section h3 {
@@ -224,7 +224,7 @@ h1.font-md {
     background-color: #6a1b9a; /* Purple background for title */
     border-radius: 5px;
     color: var(--text-color);
-    transition: background-color 1s, transform 1s; /* Smooth transitions */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .rule-title:hover {
@@ -240,7 +240,7 @@ h1.font-md {
     border: 1px solid #3b3b3b;
     border-radius: 5px;
     color: var(--text-color);
-    transition: opacity 1s ease-in-out, max-height 1s ease-in-out; /* Smooth transitions */
+    transition: opacity 2s ease-in-out, max-height 2s ease-in-out; /* Smooth transitions */
     max-height: 0;
     overflow: hidden;
     opacity: 0;
