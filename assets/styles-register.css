@@ -26,7 +26,7 @@ body {
 a {
     color: var(--text-color);
     text-decoration: none;
-    transition-duration: 0.3s;
+    transition-duration: 2s;
 }
 
 .container {
@@ -185,7 +185,7 @@ h1.font-md {
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 2s, transform 2s;
 }
 
 .btn-purple:hover {
@@ -203,7 +203,7 @@ h1.font-md {
     border-radius: 8px;
     width: 80%;
     max-width: 800px;
-    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+    transition: background-color 2s, border-color 2s; /* Smooth transitions */
 }
 
 .rules-section h3 {
@@ -224,7 +224,7 @@ h1.font-md {
     background-color: #6a1b9a; /* Purple background for title */
     border-radius: 5px;
     color: var(--text-color);
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    transition: background-color 2s, transform 2s; /* Smooth transitions */
 }
 
 .rule-title:hover {
